@@ -1,0 +1,47 @@
+# 敏感文件 — 绝不上传
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# 依赖
+node_modules/
+.next/
+
+# IDE
+.vscode/
+.idea/
+
+# 系统文件
+*.Zone.Identifier
+Thumbs.db
+.DS_Store
+
+# 不上传的目录（只保留Agent/*/agent.py）
+Agent/*/tools.py
+Agent/*/main.py
+Agent/*/prompts.py
+Agent/*/__init__.py
+shared/
+config/
+docker/
+scripts/
+packages/
+web/
+workflows/
+*.md
+!产品文档.md
+!Multi-Agent电商智能服务平台_项目介绍.md
+!README.md
+
+# 不上传的顶层文件
+Dockerfile*
+docker-compose.yml
+pyproject.toml
+Question.md
+面试问答.md
